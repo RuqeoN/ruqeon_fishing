@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balık Tutma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="fishing-progress">
+            <div class="fish-container">
+                <img src="img/fish.png" alt="fish" class="fish-icon" />
+            </div>
+            <svg class="progress-ring" width="200" height="200" viewBox="0 0 200 200">
+                <circle class="progress-ring__circle-bg" cx="100" cy="100" r="85" />
+                <circle class="progress-ring__circle" cx="100" cy="100" r="85" />
+                <text x="100" y="100" class="progress-text" text-anchor="middle" dominant-baseline="middle">0%</text>
+            </svg>
+            <div class="controls">
+                <div class="key-group">
+                    <div class="key-indicator">ESC</div>
+                    <div class="action">Balık tutmayı bırak</div>
+                </div>
+                <div class="key-group">
+                    <div class="key-indicator">E</div>
+                    <div class="action">Balığı yakala!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
